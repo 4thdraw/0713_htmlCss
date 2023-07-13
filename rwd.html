@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형의 원리</title>
+    <style>
+        /* 320 / 360 / 768 / 991 / 1024 / 1080 / 1280 / 1440 */
+        body{ background-color: blue;}
+        @media (max-width:768px) {
+            body{
+                background-color: yellow;
+            }            
+        }
+        @media (max-width:320px) {
+            body{
+                background-color: red;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <!-- html은 하나, 스타일 너비에따라 구비됨 -->
+    <!-- 문제 1 모바일에는 배경이 빨간색, 태블릿에서는 노랑, 테스트탑에서는 파랑 -->
+
+</body>
+</html>

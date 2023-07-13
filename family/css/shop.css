@@ -1,0 +1,36 @@
+#family{
+    height: 100vh;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-dark{
+    background-color: black;
+}
+#family button{
+    background-color: transparent;
+    border:5px solid white;
+    color:white;
+    padding:0  3rem;
+    border-radius: 2rem ;
+    height:3rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* #family button:hover{
+    height:10rem;    
+} */
+#family a{
+    color:white;
+    text-decoration: none;
+    line-height: 2;
+}
+#family ul{
+    display: none;
+}
+#family button:hover + ul{
+  display: block;
+}

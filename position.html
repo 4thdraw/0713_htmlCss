@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed, absolute, relative</title>
+    <style>
+        div{
+            position: fixed; 
+            width:100px; height:100px;
+            transition: 0.5s;
+        }
+        .box1{
+            left:0; top:0;
+            background-color: rgba(0,0,0,0.5) 
+        }
+        .box2{
+            right:0; top:0;
+            background-color: rgba(255,0,0,0.5)
+        }
+        .box3{
+            left:0; bottom:0;
+            background-color: rgba(0,255,0,0.5)
+        }
+        .box4{ right:0; bottom:0;
+            background-color: rgba(0,0,255,0.5)
+        }
+        .box1:hover, .box2:hover
+        {
+            width:100%;
+        }
+        .box3:hover, .box4:hover{
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
