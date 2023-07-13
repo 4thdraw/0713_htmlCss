@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업</title>
+    <style>
+        body::after{
+            content: "";
+            display: block;
+            position: fixed;
+            left:0; right:0;
+            top:0; bottom:0;
+            background-color: rgba(0,0,0,.5);
+        }
+        .popup{
+            border:1px solid black;
+            position: fixed;
+            left:1.5rem;
+            right:1.5rem;
+            top:1.5rem;
+            bottom:1.5rem;
+            max-width:600px;
+            max-height:600px;
+            margin: auto;
+            z-index: 1;
+            background-color: white;
+        }
+        a[href=""], img[alt=""]{
+            display: none;
+        }
+        a[href^="http"]{
+            display: none;
+        }
+        a[target="_blank"]{
+            display: none;
+        }
+        img[src$='.jpg']{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+
+    </div>
+</body>
+</html>
